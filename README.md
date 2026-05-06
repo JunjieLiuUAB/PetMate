@@ -1,10 +1,14 @@
 # PetMate
 
-# Table of Content
-· Software
-· Components
+## Table of Content
+- Description
+- Components
+- Software
 
-# List of Components
+## Description
+
+
+## List of Components
 | Name | Units | Price | 
 | :--- | :--- | :---
 | Foto resistor | 1 | 0,95 € |
@@ -19,5 +23,5 @@
 | PowerBank Anker Nano 30 W | 1 | 33,59 € |
 | TOTAL |  | 191,39 € |
 
-# Components
+## Components
 
