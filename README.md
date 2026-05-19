@@ -20,7 +20,7 @@
 
 ---
 
-## 🚀 Características Principales
+## Características Principales
 
 * **Detección de Animales y Poses:** Procesamiento de imágenes en tiempo real mediante la Raspberry Pi Camera Module 2.
 * **Navegación Autónoma:** Sistema de evitación de obstáculos mediante 3 sensores ultrasónicos HC-SR04.
@@ -29,7 +29,7 @@
 
 ---
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 
 * `📂 3D designs`: Modelos CAD y archivos STL para la estructura del robot.
 * `📂 circuits`: Esquemas de conexión del driver L298N, sensores y Raspberry Pi.
@@ -39,7 +39,7 @@
 ---
 
 
-## 🛠️ Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ### Hardware (Bill of Materials)
 
@@ -62,18 +62,22 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 
 ## Componentes
 
+---
+
 ### Software & Modelos
 
 (qué usamos para todo lo de VC)
 
 ---
 
-## 📦 Instalación y Configuración
+## Instalación y Configuración
 
 1. **Clonar el repositorio:**
    ```bash
    git clone [https://github.com/TU_USUARIO/PetMate.git](https://github.com/TU_USUARIO/PetMate.git)
    cd PetMate
+
+---
 
 ## Referencias
 * *[Enlace a un tutorial, paper, o documentación que os haya servido de ayuda.]*
@@ -81,8 +85,8 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 ---
 
 ## Contribuidores
-* **[Tu Nombre]** - [@tu_github](link)
-* **[Nombre Compañero]** - [@su_github](link)
+* **Junjie Liu** 
+* **[Nombre Compañero]** 
 
 ---
 
