@@ -49,17 +49,17 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 ## List of Components
 | Imagen | Descripción | Unidades | Precio | 
 | :--- | :--- | :--- | :---
-| | Foto resistor | 1 | 0,95 € |
-| | HC-SR04 | 3 | 1,80 € |
-| | Panel Solar | 1 | 7,90 € |
-| | Servo MG90S | 1 | 3,95 € |
-| | Altavoz 40mm / 3 W | 1 | 5,90 € |
-| | Raspberry Pi 4 Modelo B 8GB RAM | 1 | 88,50 € |
-| | Micrófono electret preamplificado | 1 | 9,75 € |
-| | Controlador de motores doble puente H-L298N | 1 | 15,50 € |
-| | Raspberry Pi Camera Module 2 | 1 | 19,95 € |
-| | PowerBank Anker Nano 30 W | 1 | 33,59 € |
-| | Rueda y motor 5V | 2 | X € |
+| ![Foto resistor](/resources/fotoresistencia-ldr.jpg) | Foto resistor | 1 | 0,95 € |
+| ![Ultrasonido_HC-SR04](/resources/sensor-de-distancia-por-ultrasonidos-hc-sr04.jpg) | HC-SR04 | 3 | 1,80 € |
+| ![Panel Solar](/resources/panel-solar-6v-1w-con-cable.jpg) | Panel Solar | 1 | 7,90 € |
+| ![Servo MG90S](/resources/micro-servo-sg90-rotacion-continua.jpg) | Servo MG90S | 1 | 3,95 € |
+| ![Altavoz con caja / 3 W](/resources/altavoz-con-caja-3w.jpg) | Altavoz con caja / 3 W | 1 | 5,90 € |
+| ![Raspberry Pi 4 Modelo B 8GB RAM](/resources/raspberry-pi-4-modelo-b-8gb-ram.jpg) | Raspberry Pi 4 Modelo B 8GB RAM | 1 | 88,50 € |
+| ![Micrófono](/resources/microfono-digital-mems-i2s-sph0645.jpg) | Micrófono electret preamplificado | 1 | 9,75 € |
+| ![Controlador de motores](/resources/controlador-de-motores-doble-puente-h-l298.jpg) | Controlador de motores doble puente H-L298N | 1 | 15,50 € |
+| ![Raspberry Pi Camera Module 2](/resources/camara-raspberry-pi-v2-8-megapixels.jpg) | Raspberry Pi Camera Module 2 | 1 | 19,95 € |
+| ![PowerBank](/resources/PowerBank.jpg) | PowerBank 10k mha | 1 | 33,59 € |
+| ![Rueda y motor 5V](/resources/rueda-de-goma-32x7mm.jpg) | Rueda y motor 5V | 2 | X € |
 | TOTAL | | | 191,39 € |
 
 ## Componentes
