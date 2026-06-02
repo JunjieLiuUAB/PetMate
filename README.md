@@ -9,10 +9,9 @@
 4. [Hardware y Componentes](#hardware-y-componentes)
 5. [Software y Visión Artificial](#software-y-visión-artificial)
 6. [Instalación y Configuración](#instalación-y-configuración)
-7. [Tareas Pendientes](#tareas-pendientes)
-8. [Referencias](#referencias)
-9. [Contribuidores](#contribuidores)
-10. [Licencia](#licencia)
+7. [Referencias](#referencias)
+8. [Contribuidores](#contribuidores)
+9. [Licencia](#licencia)
 
 ---
 
@@ -48,20 +47,20 @@
 El coste total estimado del hardware es de **191,39 €**. A continuación se detallan los componentes utilizados:
 
 ## List of Components
-| Name | Units | Price | 
-| :--- | :--- | :---
-| Foto resistor | 1 | 0,95 € |
-| HC-SR04 | 3 | 1,80 € |
-| Panel Solar | 1 | 7,90 € |
-| Servo MG90S | 1 | 3,95 € |
-| Altavoz 40mm / 3 W | 1 | 5,90 € |
-| Raspberry Pi 4 Modelo B 8GB RAM | 1 | 88,50 € |
-| Micrófono electret preamplificado | 1 | 9,75 € |
-| Controlador de motores doble puente H-L298N | 1 | 15,50 € |
-| Raspberry Pi Camera Module 2 | 1 | 19,95 € |
-| PowerBank Anker Nano 30 W | 1 | 33,59 € |
-| Rueda y motor 5V | 2 | X € |
-| TOTAL |  | 191,39 € |
+| Imagen | Descripción | Unidades | Precio | 
+| :--- | :--- | :--- | :---
+| | Foto resistor | 1 | 0,95 € |
+| | HC-SR04 | 3 | 1,80 € |
+| | Panel Solar | 1 | 7,90 € |
+| | Servo MG90S | 1 | 3,95 € |
+| | Altavoz 40mm / 3 W | 1 | 5,90 € |
+| | Raspberry Pi 4 Modelo B 8GB RAM | 1 | 88,50 € |
+| | Micrófono electret preamplificado | 1 | 9,75 € |
+| | Controlador de motores doble puente H-L298N | 1 | 15,50 € |
+| | Raspberry Pi Camera Module 2 | 1 | 19,95 € |
+| | PowerBank Anker Nano 30 W | 1 | 33,59 € |
+| | Rueda y motor 5V | 2 | X € |
+| TOTAL | | | 191,39 € |
 
 ## Componentes
 
@@ -89,7 +88,9 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 
 ## Contribuidores
 * **Junjie Liu** 
-* **[Nombre Compañero]** 
+* **Joel Rillo Fernández**
+* **Gerard Saez Salat**
+* **Elías Pascual Paz**
 
 ---
 
