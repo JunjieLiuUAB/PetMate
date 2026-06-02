@@ -1,4 +1,4 @@
-![PetMate parte superior](/resource/PetMate.jpg)
+![PetMate parte superior](/resources/PetMate.jpg)
 
 # PetMate 🐾🤖
 
