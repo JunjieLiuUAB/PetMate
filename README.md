@@ -60,6 +60,7 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 | Controlador de motores doble puente H-L298N | 1 | 15,50 € |
 | Raspberry Pi Camera Module 2 | 1 | 19,95 € |
 | PowerBank Anker Nano 30 W | 1 | 33,59 € |
+| Rueda y motor 5V | 2 | X € |
 | TOTAL |  | 191,39 € |
 
 ## Componentes
