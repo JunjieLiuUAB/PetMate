@@ -1,3 +1,5 @@
+![PetMate parte superior](/resource/PetMate.jpg)
+
 # PetMate 🐾🤖
 
 ## Índice
