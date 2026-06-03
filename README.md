@@ -59,8 +59,9 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 | ![Controlador de motores](/resources/controlador-de-motores-doble-puente-h-l298.jpg) | Controlador de motores doble puente H-L298N | 1 | 15,50 € |
 | ![Raspberry Pi Camera Module 2](/resources/camara-raspberry-pi-v2-8-megapixels.jpg) | Raspberry Pi Camera Module 2 | 1 | 19,95 € |
 | ![PowerBank](/resources/PowerBank.jpg) | PowerBank 10k mha | 1 | 33,59 € |
-| ![Rueda y motor 5V](/resources/rueda-de-goma-32x7mm.jpg) | Rueda y motor 5V | 2 | X € |
-| TOTAL | | | 191,39 € |
+| ![Pareja de ruedas 80x10mm](/resources/pareja-de-ruedas-80x10mm-blanco.jpg) | Pareja de ruedas 80x10mm - Blanco | 1 | 7,95 € |
+| ![Motor Micro Metal](/resources/motor-micro-metal-dc-con-redutora.jpg) | Motor Micro Metal LP | 2 | X € |
+| TOTAL | | | 199,34 € |
 
 ## Componentes
 
