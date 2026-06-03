@@ -1,6 +1,5 @@
 ![PetMate parte superior](/resources/PetMate.jpg)
 
-# PetMate 🐾🤖
 
 ## Índice
 1. [Descripción y Características](#descripción-y-características)
