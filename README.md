@@ -32,8 +32,9 @@
 ## Estructura del Repositorio
 
 * `📂 3D designs`: Modelos CAD y archivos STL para la estructura del robot.
+* `📂 PetWatch`: Github al proyecto de Visión por Computadores y servidor en la nube
 * `📂 circuits`: Esquemas de conexión del driver L298N, sensores y Raspberry Pi.
-* `📂 resources`: Diagramas de flujo, arquitectura de software y multimedia.
+* `📂 resources`: Diagramas de flujo, arquitectura de software, componentes y piezas del robot.
 * `📂 src`: Código fuente en Python ejecutable en la Raspberry Pi.
 
 ---
@@ -43,7 +44,7 @@
 
 ### Hardware (Bill of Materials)
 
-El coste total estimado del hardware es de **191,39 €**. A continuación se detallan los componentes utilizados:
+El coste total estimado del hardware es de **208,34 €**. A continuación se detallan los componentes utilizados:
 
 ## List of Components
 | Imagen | Descripción | Unidades | Precio | 
@@ -82,7 +83,7 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 ---
 
 ## Referencias
-* *[Enlace a un tutorial, paper, o documentación que os haya servido de ayuda.]*
+* *...*
 
 ---
 
