@@ -59,8 +59,8 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 | ![Raspberry Pi Camera Module 2](/resources/componentes/camara-raspberry-pi-v2-8-megapixels.jpg) | Raspberry Pi Camera Module 2 | 1 | 19,95 € |
 | ![PowerBank](/resources/componentes/PowerBank.jpg) | PowerBank 10k mha | 1 | 33,59 € |
 | ![Pareja de ruedas 80x10mm](/resources/componentes/pareja-de-ruedas-80x10mm-blanco.jpg) | Pareja de ruedas 80x10mm - Blanco | 1 | 7,95 € |
-| ![Motor Micro Metal](/resources/componentes/motor-micro-metal-dc-con-reductora.jpg) | Motor Micro Metal LP | 2 | X € |
-| TOTAL | | | 199,34 € |
+| ![Motor Micro Metal](/resources/componentes/motor-micro-metal-dc-con-reductora.jpg) | Motor Micro Metal LP | 2 | 4,50 € |
+| TOTAL | | | 208,34 € |
 
 ## Componentes
 
