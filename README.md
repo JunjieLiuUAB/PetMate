@@ -16,7 +16,9 @@
 
 ## Description
 
-**PetMate** es un robot móvil autónomo e inteligente diseñado para monitorizar mascotas o animales en entornos controlados. Utilizando una **Raspberry Pi 4** y técnicas de **Visión Artificial**, el robot no solo es capaz de identificar la presencia de un animal, sino también de estimar su pose (si está de pie, sentado, tumbado o en movimiento), permitiendo entender su comportamiento en tiempo real.
+**PetMate** es un robot móvil autónomo e inteligente diseñado para monitorizar mascotas o animales en entornos controlados utilizando un modelo entrenado por técnicas de Visión Artificial y DeepLearning para que pueda detectar y reconocer los tipos de mascotas. Además, el robot no solo es capaz de identificar la presencia de un animal, sino también de estimar su pose (si está de pie, sentado, tumbado o en movimiento), permitiendo entender su comportamiento en tiempo real. De esta forma podrás tener vigilado y controlado a tus mascotas cuando no estés en casa para su tranquilidad. 
+
+Utilizando una **Raspberry Pi 4** 
 
 ---
 
@@ -46,7 +48,7 @@
 
 El coste total estimado del hardware es de **208,34 €**. A continuación se detallan los componentes utilizados:
 
-## List of Components
+## Lista de componentes
 | Imagen | Descripción | Unidades | Precio | 
 | :--- | :--- | :--- | :---
 | ![Foto resistor](/resources/componentes/fotoresistencia-ldr.jpg) | Foto resistor | 1 | 0,95 € |
@@ -62,8 +64,6 @@ El coste total estimado del hardware es de **208,34 €**. A continuación se de
 | ![Pareja de ruedas 80x10mm](/resources/componentes/pareja-de-ruedas-80x10mm-blanco.jpg) | Pareja de ruedas 80x10mm - Blanco | 1 | 7,95 € |
 | ![Motor Micro Metal](/resources/componentes/motor-micro-metal-dc-con-reductora.jpg) | Motor Micro Metal LP | 2 | 4,50 € |
 | TOTAL | | | 208,34 € |
-
-## Componentes
 
 ---
 
