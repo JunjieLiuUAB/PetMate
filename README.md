@@ -58,7 +58,7 @@ El coste total estimado del hardware es de **191,39 €**. A continuación se de
 | ![Micrófono](/resources/microfono-digital-mems-i2s-sph0645.jpg) | Micrófono electret preamplificado | 1 | 9,75 € |
 | ![Controlador de motores](/resources/controlador-de-motores-doble-puente-h-l298.jpg) | Controlador de motores doble puente H-L298N | 1 | 15,50 € |
 | ![Raspberry Pi Camera Module 2](/resources/camara-raspberry-pi-v2-8-megapixels.jpg) | Raspberry Pi Camera Module 2 | 1 | 19,95 € |
-| ![PowerBank](/resources/PowerBank.jpg) | PowerBank 10k mha | 1 | 33,59 € |
+| ![PowerBank](/resources/Powerbank.jfif) | PowerBank 10k mha | 1 | 33,59 € |
 | ![Pareja de ruedas 80x10mm](/resources/pareja-de-ruedas-80x10mm-blanco.jpg) | Pareja de ruedas 80x10mm - Blanco | 1 | 7,95 € |
 | ![Motor Micro Metal](/resources/motor-micro-metal-dc-con-redutora.jpg) | Motor Micro Metal LP | 2 | X € |
 | TOTAL | | | 199,34 € |
