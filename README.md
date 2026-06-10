@@ -64,7 +64,9 @@ El coste total estimado del hardware es de **208,34 €**. A continuación se de
 | ![PowerBank](/resources/componentes/PowerBank.jpg) | PowerBank 10k mha | 1 | 33,59 € |
 | ![Pareja de ruedas 80x10mm](/resources/componentes/pareja-de-ruedas-80x10mm-blanco.jpg) | Pareja de ruedas 80x10mm - Blanco | 1 | 7,95 € |
 | ![Motor Micro Metal](/resources/componentes/motor-micro-metal-dc-con-reductora.jpg) | Motor Micro Metal LP | 2 | 4,50 € |
-| TOTAL | | | 208,34 € |
+| ![Base baterias 4xAA](/resources/componentes/base-para-baterias-4xaa.jpg) | Base para pilas 4xAA | 1 | 2 € |
+| ![Pilas Alcalinas 4xAA](/resources/componentes/pila-alcalina-4-x-aa.jpg) | Pilas Alcalinas 4xAA | 1 | 2,99 € |
+| TOTAL | | | 213,33 € |
 
 ---
 
