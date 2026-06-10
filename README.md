@@ -1,5 +1,6 @@
 ![PetMate parte superior](/resources/PetMate.jpg)
-
+Proyecto de robótica enfocado en la vigilancia, seguridad y bienestar de tus mascotas. 
+link video robot
 
 ## Índice
 1. [Descripción y Características](#descripción-y-características)
