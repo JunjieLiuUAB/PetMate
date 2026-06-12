@@ -2,7 +2,7 @@
 Proyecto de robótica enfocado en la vigilancia, seguridad y bienestar de tus mascotas. 
 link video robot
 
-## Índice
+### Tabla de contenidos
 1. [Descripción y Características](#descripción-y-características)
 2. [Demostración](#demostración)
 3. [Estructura del Repositorio](#estructura-del-repositorio)
@@ -35,7 +35,7 @@ Utilizando una **Raspberry Pi 4**
 ## Estructura del Repositorio
 
 * `📂 3D designs`: Modelos CAD y archivos STL para la estructura del robot.
-* `📂 PetWatch`: Github al proyecto de Visión por Computadores y servidor en la nube
+* `📂 PetWatch`: Github al proyecto de Visión por Computadores y servidor en la nube.
 * `📂 circuits`: Esquemas de conexión del driver L298N, sensores y Raspberry Pi.
 * `📂 resources`: Diagramas de flujo, arquitectura de software, componentes y piezas del robot.
 * `📂 src`: Código fuente en Python ejecutable en la Raspberry Pi.
@@ -47,7 +47,7 @@ Utilizando una **Raspberry Pi 4**
 
 ### Hardware (Bill of Materials)
 
-El coste total estimado del hardware es de **208,34 €**. A continuación se detallan los componentes utilizados:
+El coste total estimado del hardware es de **213,33 €**. A continuación se detallan los componentes utilizados:
 
 ## Lista de componentes
 | Imagen | Descripción | Unidades | Precio | 
