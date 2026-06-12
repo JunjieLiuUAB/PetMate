@@ -14,7 +14,7 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 1. [Descripción General](#-descripción-general)
 2. [Características Principales](#-características-principales)
@@ -31,7 +31,7 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 
 ---
 
-## 🤖 Descripción General
+## Descripción General
 
 **PetMate** es un robot móvil autónomo diseñado para monitorizar mascotas en entornos domésticos. Combina visión artificial, Deep Learning y navegación autónoma sobre una plataforma Raspberry Pi 4 para ofrecer:
 
@@ -44,29 +44,29 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 | Característica | Detalle |
 |---|---|
-| 🎯 **Detección de mascotas** | Clasificación del tipo de animal en tiempo real con modelo de Deep Learning |
-| 🧘 **Estimación de pose** | Detecta si la mascota está de pie, sentada, tumbada o en movimiento |
-| 🗺️ **Navegación autónoma** | Algoritmo *Wall Following* con 3 sensores ultrasónicos HC-SR04 |
-| 🚧 **Evasión de obstáculos** | Detección frontal, izquierda y derecha para esquivar obstáculos dinámicos |
-| 📱 **App remota** | Streaming de vídeo en directo y control de audio desde el móvil |
-| 🔊 **Altavoz integrado** | Reproducción de audios enviados desde la app o alertas automáticas |
-| 🍖 **Dispensador de premios** | Servo-actuado: dispensa una chuche cuando detecta la secuencia correcta de comportamiento |
-| ☀️ **Panel solar** | Recarga continua para vigilancia prolongada sin necesidad de enchufar el robot |
-| ☁️ **Modelo en la nube** | Inferencia y almacenamiento gestionados remotamente mediante el proyecto *PetWatch* |
+| **Detección de mascotas** | Clasificación del tipo de animal en tiempo real con modelo de Deep Learning |
+| **Estimación de pose** | Detecta si la mascota está de pie, sentada, tumbada o en movimiento |
+| **Navegación autónoma** | Algoritmo *Wall Following* con 3 sensores ultrasónicos HC-SR04 |
+| **Evasión de obstáculos** | Detección frontal, izquierda y derecha para esquivar obstáculos dinámicos |
+| **App remota** | Streaming de vídeo en directo y control de audio desde el móvil |
+| **Altavoz integrado** | Reproducción de audios enviados desde la app o alertas automáticas |
+| **Dispensador de premios** | Servo-actuado: dispensa una chuche cuando detecta la secuencia correcta de comportamiento |
+| **Panel solar** | Recarga continua para vigilancia prolongada sin necesidad de enchufar el robot |
+| **Modelo en la nube** | Inferencia y almacenamiento gestionados remotamente mediante el proyecto *PetWatch* |
 
 ---
 
-## 🎬 Demo
+## Demo
 
-> 📹 **[Ver vídeo del robot en funcionamiento](#)** ← *(añade aquí el enlace al vídeo)*
+> 📹 **[Ver vídeo del robot en funcionamiento](#)** 
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -97,7 +97,7 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 
 ---
 
-## 🔧 Hardware y Componentes
+## Hardware y Componentes
 
 El coste total estimado del hardware es de **213,33 €**.
 
@@ -121,7 +121,7 @@ El coste total estimado del hardware es de **213,33 €**.
 
 ---
 
-## 🧠 Software y Visión Artificial
+## Software y Visión Artificial
 
 El pipeline de visión artificial se estructura en dos etapas en cascada:
 
@@ -135,10 +135,9 @@ Una vez identificado el animal, un segundo modelo clasifica su estado postural:
 
 | Pose | Descripción |
 |---|---|
-| 🧍 De pie | El animal está erguido sobre sus patas |
-| 🪑 Sentado | El animal está sentado |
-| 🛌 Tumbado | El animal está estirado en el suelo |
-| 🏃 En movimiento | El animal se desplaza activamente |
+| De pie | El animal está erguido sobre sus patas |
+| Sentado | El animal está sentado |
+| Tumbado | El animal está estirado en el suelo |
 
 ### Infraestructura Cloud — PetWatch
 El modelo de inferencia está desplegado en la nube a través del proyecto **[PetWatch](📂 PetWatch)**, que también gestiona:
@@ -150,7 +149,7 @@ El modelo de inferencia está desplegado en la nube a través del proyecto **[Pe
 
 ---
 
-## 🗺️ Algoritmo de Navegación
+## Algoritmo de Navegación
 
 PetMate implementa un algoritmo de **Wall Following** para patrullar el hogar de forma estructurada:
 
@@ -181,7 +180,7 @@ El robot mantiene siempre una pared a su **derecha**, recorriendo el perímetro 
 
 ---
 
-## 🚀 Instalación y Configuración
+## Instalación y Configuración
 
 ### Requisitos previos
 
@@ -228,7 +227,7 @@ python src/main.py
 
 ---
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 PetMate/
@@ -247,7 +246,7 @@ PetMate/
 
 ---
 
-## 📚 Referencias
+## Referencias
 
 - *Wall Following Algorithm for Mobile Robots* — *(añade referencia académica)*
 - *YOLOv8 / Deep Learning framework utilizado* — *(añade referencia)*
@@ -256,7 +255,7 @@ PetMate/
 
 ---
 
-## 👥 Contribuidores
+## Contribuidores
 
 | Nombre | GitHub |
 |---|---|
@@ -267,7 +266,7 @@ PetMate/
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
