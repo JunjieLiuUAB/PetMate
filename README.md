@@ -261,7 +261,7 @@ PetMate/
 
 | Nombre | GitHub |
 |---|---|
-| Junjie Liu | [@usuario](#) |
+| Junjie Liu |  [@NIU1708478](https://github.com/JunjieLiuUAB) |
 | Joel Rillo Fernández | [@usuario](#) |
 | Gerard Saez Salat | [@usuario](#) |
 | Elías Pascual Paz | [@usuario](#) |
