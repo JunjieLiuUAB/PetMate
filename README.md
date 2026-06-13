@@ -1,6 +1,6 @@
 <img src="resources/PetMate.jpg" align="right" width="340" alt="PetMate Robot"/>
 
-<p fontsize: 35px> 🐾 PetMate </p>  
+<span style="font-size: 35px; font-weight: bold;">🐾 PetMate</span>&nbsp;&nbsp;
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%204-red?logo=raspberry-pi)](https://www.raspberrypi.com/)
