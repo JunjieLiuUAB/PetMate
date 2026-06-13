@@ -76,35 +76,6 @@ Vídeo demostrativo del robot PetMate en funcionamiento con todas sus funcionali
 
 ---
 
-## Arquitectura del Sistema
-
-```
-┌─────────────────────────────────────────────────────┐
-│                    APLICACIÓN MÓVIL                 │
-│          (Streaming vídeo · Envío de audios)        │
-└────────────────────┬────────────────────────────────┘
-                     │ WiFi / Cloud (PetWatch)
-┌────────────────────▼────────────────────────────────┐
-│                  RASPBERRY PI 4                     │
-│                                                     │
-│  ┌─────────────┐   ┌──────────────┐  ┌───────────┐  │
-│  │  Pi Camera  │──▶ Deep Learning│  │  PetWatch │  │
-│  │  Module 2   │   │  (Detección  │─▶   Cloud   │  │
-│  └─────────────┘   │  + Pose Est.)│  └───────────┘  │
-│                    └──────┬───────┘                 │
-│  ┌─────────────┐          │ Comportamiento          │
-│  │ HC-SR04 ×3  │   ┌──────▼───────┐  ┌───────────┐  │
-│  │ (Izq·Frente │──▶  Navegación  │  │Dispensador│  │
-│  │    ·Der.)   │   │Wall Following│  │  (Servo)  │  │
-│  └─────────────┘   └──────┬───────┘  └───────────┘  │
-│                           │                         │
-│  ┌─────────────┐   ┌──────▼───────┐  ┌───────────┐  │
-│  │ Panel Solar │   │   L298N +    │  │ Altavoz   │  │
-│  │ + PowerBank │   │  2× Motores  │  │  3W       │  │
-│  └─────────────┘   └──────────────┘  └───────────┘  │
-└─────────────────────────────────────────────────────┘
-```
-
 ## Arquitectura del Software
 <img src="resources/Diagrama_Software_2.0.png" alt="Diagrama de la arquitectura de software">
 
