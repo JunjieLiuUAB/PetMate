@@ -146,37 +146,10 @@ El modelo de inferencia está desplegado en la nube a través del proyecto **[Pe
 - Recepción y reproducción de audios enviados por el usuario.
 - Almacenamiento de eventos y alertas.
 
-**Stack tecnológico:** 
+**Stack tecnológico:**
+* **Robot Edge (Raspberry Pi 4):** `picamera2` (captura de vídeo), `opencv-python` (compresión de frames y decodificación de audio), `RPi.GPIO` (control de motores DRI0002, servo y sensores HC-SR04) y `numpy`.
+* **Plataforma Cloud (GCP & Firebase):** `functions-framework` (Cloud Functions), `torch` y `torchvision` (Inferencia YOLOv8 y ResNet), `google-cloud-pubsub` (comandos en tiempo real), `google-cloud-storage` (buckets de imágenes/audios) y `google-cloud-firestore` / `firebase-admin` (base de datos y alertas).
 
-### Stack Tecnológico
-
-El proyecto está dividido en una arquitectura distribuida (Edge-Cloud) para maximizar la eficiencia de cómputo en tiempo real y la persistencia de datos:
-
-**1. En el Robot Edge (Raspberry Pi 4)**
-* **Captura y Procesamiento Local:** `picamera2` (gestión y captura nativa de frames) y `opencv-python` (compresión de vídeo local y codificación/decodificación).
-* **Control de Hardware y Actuadores:** `RPi.GPIO` (control de señales digitales y modulación por ancho de pulsos PWM para motores y servos).
-* **Gestión de Datos Numéricos:** `numpy` (procesamiento eficiente de matrices de imagen antes de enviarlas a la nube y cálculo de distancias por ultrasonidos).
-
-**2. En la Plataforma Cloud (Google Cloud Platform & Firebase)**
-* **Microservicios (Serverless):** `functions-framework` para la ejecución de las **Cloud Functions** en Python.
-* **Inferencia de Inteligencia Artificial:** `torch` (PyTorch) y `torchvision` para procesar el modelo integrado de **YOLOv8** (detección de mascotas) y el **ResNet Classifier** (estimación de la pose: sentado, tumbado, de pie).
-* **Mensajería y Streaming:** `google-cloud-pubsub` para colas de comandos en tiempo real (`robot-commands`), `Cloud Messaging` para el envío de alertas push a la app, y `google-cloud-storage` para la transferencia de frames (`frames_entrada`) y almacenamiento de modelos/audios.
-* **Base de Datos:** `google-cloud-firestore` y `firebase-admin` para almacenar la telemetría en tiempo real de la mascota.
-
----
-
-**Hardware y Componentes (Software Asociado)**
-
-A continuación se detalla qué librerías específicas controlan la lógica de cada componente físico conectado a los pines GPIO de la Raspberry Pi 4:
-
-| Componente | Librería Utilizada | Rol y Operación en el Código |
-| :--- | :--- | :--- |
-| **Pi Camera Module 2** | `picamera2` + `opencv-python` | Captura el flujo de vídeo continuo. Ejecuta el proceso local de captura y compresión de frames antes del *Upstream* hacia el bucket de Google Cloud Storage. |
-| **Driver de Motores L298N / DRI0002** | `RPi.GPIO` | Controla los dos motores de oruga para el patrullaje. Utiliza pines lógicos para la dirección y señales PWM para regular la velocidad de las ruedas en el algoritmo de navegación. |
-| **3x Sensores Ultrasónicos HC-SR04** | `RPi.GPIO` + `numpy` | Implementa el algoritmo de navegación local *Wall Following*. Mide el tiempo de respuesta del eco en microsegundos para calcular la distancia a obstáculos frontales y laterales. |
-| **Servo MG90S (Dispensador)** | `RPi.GPIO` | Controla el mecanismo físico de dispensación de chuches mediante una señal PWM a 50Hz, moviendo el ángulo del servo cuando llega la orden desde la nube. |
-| **Altavoz 3W** | `opencv-python-headless` (o `pygame`) | Ejecuta el subproceso de descodificación de audio local (recibido en Base64/Bytes a través de la API y Pub/Sub) para reproducir la voz del usuario enviada desde la App Móvil. |
-| **Fotoresistor LDR** | `RPi.GPIO` | Mide la luz ambiental mediante el tiempo de descarga/carga de un condensador en un pin digital para tareas auxiliares de entorno. |
 ---
 
 ## Algoritmo de Navegación
