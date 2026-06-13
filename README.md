@@ -22,15 +22,18 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 1. [Descripción General](#-descripción-general)
 2. [Características Principales](#-características-principales)
 3. [Demo](#-demo)
-4. [Arquitectura del Sistema](#-arquitectura-del-sistema)
-5. [Hardware y Componentes](#-hardware-y-componentes)
-6. [Software y Visión Artificial](#-software-y-visión-artificial)
-7. [Algoritmo de Navegación](#-algoritmo-de-navegación)
-8. [Instalación y Configuración](#-instalación-y-configuración)
-9. [Estructura del Repositorio](#-estructura-del-repositorio)
-10. [Referencias](#-referencias)
-11. [Contribuidores](#-contribuidores)
-12. [Licencia](#-licencia)
+4. [Hardware y Componentes](#-hardware-y-componentes)
+   4.1. [Componentes](#-componentes)
+   4.2. [Arquitectura del Hardware](#-arquitectura-del-hardware)
+5. [Software y Visión Artificial](#-software-y-visión-artificial)
+   5.1. [Arquitectura del Sistema](#-arquitectura-del-sistema)
+   5.2. [Visión Artificial](#-visión-artificial)
+6. [Algoritmo de Navegación](#-algoritmo-de-navegación)
+7. [Instalación y Configuración](#-instalación-y-configuración)
+8. [Estructura del Repositorio](#-estructura-del-repositorio)
+9. [Referencias](#-referencias)
+10. [Contribuidores](#-contribuidores)
+11. [Licencia](#-licencia)
 
 ---
 
@@ -78,7 +81,9 @@ Vídeo demostrativo del robot PetMate en funcionamiento con todas sus funcionali
 
 ## Hardware y Componentes
 
-El coste total estimado del hardware es de **213,33 €**.
+En esta sección se detalla el hardware y los componentes del robot.
+
+### Componentes
 
 | Imagen | Componente | Unid. | Precio |
 |:---:|:---|:---:|---:|
@@ -98,6 +103,7 @@ El coste total estimado del hardware es de **213,33 €**.
 | <img src="resources/componentes/fotoresistencia-ldr.jpg" width="250" alt="LDR"> | Fotoresistor LDR | 1 | 0,95 € |
 | | | **TOTAL** | **213,33 €** |
 
+El coste total estimado del hardware es de **213,33 €**.
 
 ### Arquitectura del Hardware
 
@@ -116,14 +122,16 @@ En este apartado se detalla con un diagrama la arquitectura del software de los 
 
 <img src="resources/Diagrama_Software_2.0.png" alt="Diagrama de la arquitectura de software">
 
+### Visión Artificial
+
 El pipeline de visión artificial se estructura en dos etapas en cascada:
 
-### 1. Detección del tipo de mascota
+#### 1. Detección del tipo de mascota
 - Modelo de detección de objetos entrenado con técnicas de **Deep Learning y YOLOv8**.
 - Procesa el flujo de vídeo en tiempo real desde la **Pi Camera Module 2**.
 - Clasifica el animal detectado (perro, gato, etc.).
 
-### 2. Estimación de pose
+#### 2. Estimación de pose
 Una vez identificado el animal, un segundo modelo clasifica su estado postural:
 
 | Pose | Descripción |
@@ -132,7 +140,7 @@ Una vez identificado el animal, un segundo modelo clasifica su estado postural:
 | Sentado | El animal está sentado |
 | Tumbado | El animal está estirado en el suelo |
 
-### Infraestructura Cloud — PetWatch
+#### Infraestructura Cloud — PetWatch
 El modelo de inferencia está desplegado en la nube a través del proyecto **[PetWatch](📂 PetWatch)**, que también gestiona:
 - Streaming de vídeo hacia la app móvil.
 - Recepción y reproducción de audios enviados por el usuario.
