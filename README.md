@@ -19,6 +19,23 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 
 ## Tabla de Contenidos
 
+1. [Descripción General](#descripción-general)
+2. [Características Principales](#características-principales)
+3. [Demo](#demo)
+4. [Hardware y Componentes](#hardware-y-componentes)
+   - [4.1. Componentes](#41-componentes)
+   - [4.2. Arquitectura del Hardware](#42-arquitectura-del-hardware)
+5. [Software y Visión Artificial](#software-y-visión-artificial)
+   - [5.1. Arquitectura del Software](#51-arquitectura-del-software)
+   - [5.2. Visión Artificial](#52-visión-artificial)
+6. [Algoritmo de Navegación](#algoritmo-de-navegación)
+7. [Instalación y Configuración](#instalación-y-configuración)
+8. [Estructura del Repositorio](#estructura-del-repositorio)
+9. [Referencias](#referencias)
+10. [Contribuidores](#contribuidores)
+11. [Licencia](#licencia)
+
+
 1. [Descripción General](#-descripción-general)
 2. [Características Principales](#-características-principales)
 3. [Demo](#-demo)
