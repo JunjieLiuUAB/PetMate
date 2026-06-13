@@ -12,6 +12,7 @@
 
 > **Robot autónomo inteligente** para la vigilancia, seguridad y bienestar de tus mascotas cuando no estás en casa.
 
+
 PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mascota, estima su pose en tiempo real, dispensa premios por buen comportamiento y te permite interactuar con ella a distancia desde una aplicación móvil.
 
 ---
@@ -73,27 +74,27 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 ```
 ┌─────────────────────────────────────────────────────┐
 │                    APLICACIÓN MÓVIL                 │
-│          (Streaming vídeo · Envío de audios)         │
+│          (Streaming vídeo · Envío de audios)        │
 └────────────────────┬────────────────────────────────┘
                      │ WiFi / Cloud (PetWatch)
 ┌────────────────────▼────────────────────────────────┐
-│                  RASPBERRY PI 4                      │
+│                  RASPBERRY PI 4                     │
 │                                                     │
-│  ┌─────────────┐   ┌──────────────┐  ┌───────────┐ │
-│  │  Pi Camera  │──▶│ Deep Learning│  │  PetWatch │ │
-│  │  Module 2   │   │  (Detección  │─▶│   Cloud   │ │
-│  └─────────────┘   │  + Pose Est.)│  └───────────┘ │
+│  ┌─────────────┐   ┌──────────────┐  ┌───────────┐  │
+│  │  Pi Camera  │──▶ Deep Learning│  │  PetWatch │  │
+│  │  Module 2   │   │  (Detección  │─▶   Cloud   │  │
+│  └─────────────┘   │  + Pose Est.)│  └───────────┘  │
 │                    └──────┬───────┘                 │
-│  ┌─────────────┐          │ Comportamiento           │
-│  │ HC-SR04 ×3  │   ┌──────▼───────┐  ┌───────────┐ │
-│  │ (Izq·Frente │──▶│  Navegación  │  │Dispensador│ │
-│  │    ·Der.)   │   │Wall Following│  │  (Servo)  │ │
-│  └─────────────┘   └──────┬───────┘  └───────────┘ │
+│  ┌─────────────┐          │ Comportamiento          │
+│  │ HC-SR04 ×3  │   ┌──────▼───────┐  ┌───────────┐  │
+│  │ (Izq·Frente │──▶  Navegación  │  │Dispensador│  │
+│  │    ·Der.)   │   │Wall Following│  │  (Servo)  │  │
+│  └─────────────┘   └──────┬───────┘  └───────────┘  │
 │                           │                         │
-│  ┌─────────────┐   ┌──────▼───────┐  ┌───────────┐ │
-│  │ Panel Solar │   │   L298N +    │  │ Altavoz   │ │
-│  │ + PowerBank │   │  2× Motores  │  │  3W       │ │
-│  └─────────────┘   └──────────────┘  └───────────┘ │
+│  ┌─────────────┐   ┌──────▼───────┐  ┌───────────┐  │
+│  │ Panel Solar │   │   L298N +    │  │ Altavoz   │  │
+│  │ + PowerBank │   │  2× Motores  │  │  3W       │  │
+│  └─────────────┘   └──────────────┘  └───────────┘  │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -173,7 +174,7 @@ PetMate implementa un algoritmo de **Wall Following** para patrullar el hogar de
 │                                                             │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │ Sin pared detectada  →  Girar izquierda hasta        │   │
-│  │                          encontrar pared por derecha  │   │
+│  │                          encontrar pared por derecha │   │
 │  └──────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -250,8 +251,8 @@ PetMate/
 
 ## Referencias
 
-- *Wall Following Algorithm for Mobile Robots* — *(añade referencia académica)*
-- *YOLOv8 / Deep Learning framework utilizado* — *(añade referencia)*
+- *Wall Following Algorithm for Mobile Robots* — 
+- *YOLOv8 / Deep Learning framework utilizado* — 
 - [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/)
 - [HC-SR04 Ultrasonic Sensor Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
 
@@ -262,9 +263,9 @@ PetMate/
 | Nombre | GitHub |
 |---|---|
 | Junjie Liu |  [@NIU1708478](https://github.com/JunjieLiuUAB) |
-| Joel Rillo Fernández | [@usuario](#) |
-| Gerard Saez Salat | [@usuario](#) |
-| Elías Pascual Paz | [@usuario](#) |
+| Joel Rillo Fernández | [@NIU1708430](https://github.com/NIU1708430) |
+| Gerard Saez Salat | [@gsaez22](https://github.com/gsaez22) |
+| Elías Pascual Paz | [@Elías](https://github.com/NIU1672946) |
 
 ---
 
