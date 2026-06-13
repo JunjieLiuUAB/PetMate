@@ -69,7 +69,7 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 
 ## Demo
 
-> 📹 **[Vídeo del robot PetMate en funcionamiento](#https://drive.google.com/file/d/18QyB4_ARn3ffCMrifwrO2AGSIk0D8yak/view?usp=drive_link)** 
+> **[Vídeo del robot PetMate en funcionamiento](https://drive.google.com/file/d/18QyB4_ARn3ffCMrifwrO2AGSIk0D8yak/view?usp=drive_link)** 
 
 ---
 
