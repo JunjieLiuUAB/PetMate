@@ -110,30 +110,6 @@ El coste total estimado del hardware es de **213,33 €**.
 
 | Imagen | Componente | Unid. | Precio |
 |:---:|:---|:---:|---:|
-| ![Raspberry Pi 4](resources/componentes/raspberry-pi-4-modelo-b-8gb-ram.jpg) | Raspberry Pi 4 Modelo B — 8 GB RAM | 1 | 88,50 € |
-| ![Pi Camera](resources/componentes/camara-raspberry-pi-v2-8-megapixels.jpg) | Raspberry Pi Camera Module 2 (8 MP) | 1 | 19,95 € |
-| ![PowerBank](resources/componentes/PowerBank.jpg) | PowerBank 10 000 mAh | 1 | 33,59 € |
-| ![L298N](resources/componentes/controlador-de-motores-doble-puente-h-l298.jpg) | Controlador de motores doble puente H — L298N | 1 | 15,50 € |
-| ![Micrófono](resources/componentes/microfono-digital-mems-i2s-sph0645.jpg) | Micrófono electret preamplificado | 1 | 9,75 € |
-| ![Panel Solar](resources/componentes/panel-solar-6v-1w-con-cable.jpg) | Panel Solar 6 V / 1 W con cable | 1 | 7,90 € |
-| ![Ruedas](resources/componentes/pareja-de-ruedas-80x10mm-blanco.jpg) | Pareja de ruedas 80×10 mm | 1 | 7,95 € |
-| ![Altavoz](resources/componentes/altavoz-con-caja-3w.jpg) | Altavoz con caja 3 W | 1 | 5,90 € |
-| ![Servo](resources/componentes/micro-servo-sg90-rotacion-continua.jpg) | Servo MG90S (dispensador) | 1 | 3,95 € |
-| ![Motor](resources/componentes/motor-micro-metal-dc-con-reductora.jpg) | Motor Micro Metal LP con reductora | 2 | 4,50 € |
-| ![Pilas](resources/componentes/pila-alcalina-4-x-aa.jpg) | Pilas Alcalinas 4×AA | 1 | 2,99 € |
-| ![Base pilas](resources/componentes/base-para-baterias-4xaa.jpg) | Base para pilas 4×AA | 1 | 2,00 € |
-| ![HC-SR04](resources/componentes/sensor-de-distancia-por-ultrasonidos-hc-sr04.jpg) | Sensor ultrasónico HC-SR04 | 3 | 1,80 € |
-| ![LDR](resources/componentes/fotoresistencia-ldr.jpg) | Fotoresistor LDR | 1 | 0,95 € |
-| | | **TOTAL** | **213,33 €** |
-
----
-
-## Hardware y Componentes
-
-El coste total estimado del hardware es de **213,33 €**.
-
-| Imagen | Componente | Unid. | Precio |
-|:---:|:---|:---:|---:|
 | <img src="resources/componentes/raspberry-pi-4-modelo-b-8gb-ram.jpg" width="250" alt="Raspberry Pi 4"> | Raspberry Pi 4 Modelo B — 8 GB RAM | 1 | 88,50 € |
 | <img src="resources/componentes/camara-raspberry-pi-v2-8-megapixels.jpg" width="250" alt="Pi Camera"> | Raspberry Pi Camera Module 2 (8 MP) | 1 | 19,95 € |
 | <img src="resources/componentes/PowerBank.jpg" width="250" alt="PowerBank"> | PowerBank 10 000 mAh | 1 | 33,59 € |
