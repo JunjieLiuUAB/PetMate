@@ -2,7 +2,6 @@
 
 # 🐾 PetMate
 
-<img src="resources/PetMate.jpg" align="right" width="340" alt="PetMate Robot"/>
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%204-red?logo=raspberry-pi)](https://www.raspberrypi.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,6 +11,8 @@
 > **Robot autónomo inteligente** para la vigilancia, seguridad y bienestar de tus mascotas cuando no estás en casa.
 
 PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mascota, estima su pose en tiempo real, dispensa premios por buen comportamiento y te permite interactuar con ella a distancia desde una aplicación móvil.
+
+<img src="resources/PetMate.jpg" align="right" width="340" alt="PetMate Robot"/>
 
 ---
 
