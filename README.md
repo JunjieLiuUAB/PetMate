@@ -183,20 +183,14 @@ El robot mantiene siempre una pared a su **derecha**, recorriendo el perímetro 
 
 ## Instalación y Configuración
 
+Sigue estos pasos para clonar el proyecto, instalar todo lo necesario y configurar el entorno en tu Raspberry Pi 4
+
 ### Requisitos previos
 
+Antes de comenzar, asegúrate de tener lo siguient en tu Raspberry Pi:
 - Raspberry Pi 4 con Raspberry Pi OS (64-bit)
 - Python 3.11+
 - Conexión WiFi activa
-
-### Dependencias principales
-
-```bash
-pip install opencv-python
-pip install numpy
-pip install RPi.GPIO
-# (añade aquí el resto de librerías del proyecto)
-```
 
 ### Pasos de instalación
 
@@ -217,7 +211,6 @@ pip install -r requirements.txt
 
 ```bash
 cp config/config.example.yaml config/config.yaml
-# Edita config.yaml con tus credenciales
 ```
 
 **4. Ejecutar el robot:**
