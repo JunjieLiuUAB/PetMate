@@ -76,11 +76,6 @@ Vídeo demostrativo del robot PetMate en funcionamiento con todas sus funcionali
 
 ---
 
-## Arquitectura del Software
-<img src="resources/Diagrama_Software_2.0.png" alt="Diagrama de la arquitectura de software">
-
----
-
 ## Hardware y Componentes
 
 El coste total estimado del hardware es de **213,33 €**.
@@ -103,10 +98,23 @@ El coste total estimado del hardware es de **213,33 €**.
 | <img src="resources/componentes/fotoresistencia-ldr.jpg" width="250" alt="LDR"> | Fotoresistor LDR | 1 | 0,95 € |
 | | | **TOTAL** | **213,33 €** |
 
+
+### Arquitectura del Hardware
+
+En este apartado se describe cómo se conecta todos los componentes hardware del robot para garantizar su correcto funcionamiento.
+
 ---
 
 
 ## Software y Visión Artificial
+
+En esta sección se describe los detalles del software y la visión artifical de nuestro proyecto.
+
+### Arquitectura del Software
+
+En este apartado se detalla con un diagrama la arquitectura del software de los diversos módulos interconectados del robot, explicando cómo se comunica y colabora cada componente para garantizar el correcto funcionamiento de nuestro robot PetMate.
+
+<img src="resources/Diagrama_Software_2.0.png" alt="Diagrama de la arquitectura de software">
 
 El pipeline de visión artificial se estructura en dos etapas en cascada:
 
