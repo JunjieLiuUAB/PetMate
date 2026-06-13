@@ -39,7 +39,7 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 **PetMate** es un robot móvil autónomo diseñado para monitorizar mascotas en entornos domésticos. Combina visión artificial, Deep Learning y navegación autónoma sobre una plataforma Raspberry Pi 4 para ofrecer:
 
 - **Vigilancia continua** de tu mascota mientras no estás en casa.
-- **Identificación** del tipo de animal y **clasificación de su pose** (de pie, sentado, tumbado, en movimiento).
+- **Identificación** del tipo de animal y **clasificación de su pose** (de pie, sentado, tumbado).
 - **Interacción remota** mediante una app móvil: visualización en directo y envío de audios.
 - **Dispensación de premios** automática por buen comportamiento (p. ej., sentarse a la orden).
 - **Patrullaje autónomo** con evasión de obstáculos mediante algoritmo *Wall Following*.
@@ -56,18 +56,21 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 | Característica | Detalle |
 |---|---|
 | **Detección de mascotas** | Clasificación del tipo de animal en tiempo real con modelo de Deep Learning |
-| **Estimación de pose** | Detecta si la mascota está de pie, sentada, tumbada o en movimiento |
-| **Navegación autónoma** | Algoritmo *Wall Following* con 3 sensores ultrasónicos HC-SR04 |
+| **Estimación de pose** | Detecta si la mascota está de pie, sentada o tumbada |
+| **Navegación autónoma** | Algoritmo *Wall Following* implementado con 3 sensores ultrasónicos HC-SR04 |
 | **Evasión de obstáculos** | Detección frontal, izquierda y derecha para esquivar obstáculos dinámicos |
 | **App remota** | Streaming de vídeo en directo y control de audio desde el móvil |
 | **Altavoz integrado** | Reproducción de audios enviados desde la app o alertas automáticas |
 | **Dispensador de premios** | Servo-actuado: dispensa una chuche cuando detecta la secuencia correcta de comportamiento |
 | **Panel solar** | Recarga continua para vigilancia prolongada sin necesidad de enchufar el robot |
 | **Modelo en la nube** | Inferencia y almacenamiento gestionados remotamente mediante el proyecto *PetWatch* |
+| **Notificaciones instantáneas** | Notificaciones en tiempo real de lo que está haciendo la mascota a través de la app |
 
 ---
 
 ## Demo
+
+Vídeo demostrativo del robot PetMate en funcionamiento con todas sus funcionalidades
 
 > **[Vídeo del robot PetMate en funcionamiento](https://drive.google.com/file/d/18QyB4_ARn3ffCMrifwrO2AGSIk0D8yak/view?usp=drive_link)** 
 
@@ -134,7 +137,7 @@ El coste total estimado del hardware es de **213,33 €**.
 El pipeline de visión artificial se estructura en dos etapas en cascada:
 
 ### 1. Detección del tipo de mascota
-- Modelo de detección de objetos entrenado con técnicas de **Deep Learning**.
+- Modelo de detección de objetos entrenado con técnicas de **Deep Learning y YOLOv8**.
 - Procesa el flujo de vídeo en tiempo real desde la **Pi Camera Module 2**.
 - Clasifica el animal detectado (perro, gato, etc.).
 
@@ -256,10 +259,12 @@ PetMate/
 
 ## Referencias
 
-- *Wall Following Algorithm for Mobile Robots* — 
-- *YOLOv8 / Deep Learning framework utilizado* — 
+- [Wall Following Algorithm](https://iamzxlee.wordpress.com/2014/06/21/wall-following-robot/) 
+- [Ultralytics, “YOLO8 Models,” Ultralytics Documentation](https://docs.ultralytics.com/es/models/yolov8)
 - [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/)
 - [HC-SR04 Ultrasonic Sensor Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
+- [Diseño y construcción de un robot de vigilancia](https://ru.dgb.unam.mx/server/api/core/bitstreams/b9e9041b-f1f8-48f6-aa99-0d780be3b49f/content)
+- [Programación de robot móvil para vigilancia con visión artificial](https://riunet.upv.es/server/api/core/bitstreams/732d7050-a3f3-4cd7-b9b0-4206617300e7/content)
 
 ---
 
