@@ -105,6 +105,9 @@ Vídeo demostrativo del robot PetMate en funcionamiento con todas sus funcionali
 └─────────────────────────────────────────────────────┘
 ```
 
+## Arquitectura del Software
+<img src="resources/Diagrama_Software.png" alt="Diagrama de la arquitectura de software">
+
 ---
 
 ## Hardware y Componentes
