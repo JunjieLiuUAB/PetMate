@@ -173,8 +173,14 @@ PetMate implementa un algoritmo de **Wall Following** para patrullar el hogar de
 │  └──────────────────────────────────────────────────────┘   │
 │                                                             │
 │  ┌──────────────────────────────────────────────────────┐   │
-│  │ Sin pared detectada  →  Girar izquierda hasta        │   │
+│  │ Sensor IZQUIERDO detecta obstáculo  →  Girar derecha │   │
+│  └──────────────────────────────────────────────────────┘   │
+│                                                             │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │ Pared detectada lejos  →  Girar izquierda hasta      │   │
 │  │                          encontrar pared por derecha │   │
+│  │ Sin pared detectada  →  Seguir recto hasta encontrar │   │
+│  │                               pared de frente        │   │
 │  └──────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
 ```
