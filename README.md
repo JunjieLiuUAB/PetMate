@@ -46,7 +46,7 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 - **Autonomía energética** gracias a un panel solar integrado.
 
 
-<p><img src="resources/PetMateR.mp4" width="500" style="border-radius: 0%;"</p>
+<p><img src="resources/PetMateR.gif" width="500" style="border-radius: 0%;"</p>
 
 ---
 
