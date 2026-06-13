@@ -45,8 +45,10 @@ PetMate patrulla tu hogar de forma autónoma, detecta y clasifica el tipo de mas
 - **Patrullaje autónomo** con evasión de obstáculos mediante algoritmo *Wall Following*.
 - **Autonomía energética** gracias a un panel solar integrado.
 
-
+### Modelo 3D
 <p><img src="resources/PetMateR.gif" width="500" style="border-radius: 0%;"</p>
+
+<p><img src="resources/PetMate.gif" width="500" style="border-radius: 0%;"</p>
 
 ---
 
