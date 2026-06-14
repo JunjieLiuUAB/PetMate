@@ -89,7 +89,7 @@ En esta sección se detalla el hardware y los componentes del robot.
 |:---:|:---|:---:|---:|
 | <img src="resources/componentes/raspberry-pi-4-modelo-b-8gb-ram.jpg" width="250" alt="Raspberry Pi 4"> | Raspberry Pi 4 Modelo B — 8 GB RAM | 1 | 88,50 € |
 | <img src="resources/componentes/camara-raspberry-pi-v2-8-megapixels.jpg" width="250" alt="Pi Camera"> | Raspberry Pi Camera Module 2 (8 MP) | 1 | 19,95 € |
-| <img src="resources/componentes/PowerBank.jpg" width="250" alt="PowerBank"> | PowerBank 10 000 mAh | 1 | 33,59 € |
+| <img src="resources/componentes/PowerBank.jpg" width="250" alt="PowerBank"> | PowerBank 10 000 mAh | 1 | 15,95 € |
 | <img src="resources/componentes/controlador-de-motores-doble-puente-h-l298.jpg" width="250" alt="L298N"> | Controlador de motores doble puente H — L298N | 1 | 15,50 € |
 | <img src="resources/componentes/microfono-digital-mems-i2s-sph0645.jpg" width="250" alt="Micrófono"> | Micrófono electret preamplificado | 1 | 9,75 € |
 | <img src="resources/componentes/panel-solar-6v-1w-con-cable.jpg" width="250" alt="Panel Solar"> | Panel Solar 6 V / 1 W con cable | 1 | 7,90 € |
@@ -100,10 +100,9 @@ En esta sección se detalla el hardware y los componentes del robot.
 | <img src="resources/componentes/pila-alcalina-4-x-aa.jpg" width="250" alt="Pilas"> | Pilas Alcalinas 4×AA | 1 | 2,99 € |
 | <img src="resources/componentes/base-para-baterias-4xaa.jpg" width="250" alt="Base pilas"> | Base para pilas 4×AA | 1 | 2,00 € |
 | <img src="resources/componentes/sensor-de-distancia-por-ultrasonidos-hc-sr04.jpg" width="250" alt="HC-SR04"> | Sensor ultrasónico HC-SR04 | 3 | 1,80 € |
-| <img src="resources/componentes/fotoresistencia-ldr.jpg" width="250" alt="LDR"> | Fotoresistor LDR | 1 | 0,95 € |
-| | | **TOTAL** | **213,33 €** |
+| | | **TOTAL** | **212,38 €** |
 
-El coste total estimado del hardware es de **213,33 €**.
+El coste total estimado del hardware es de **212,38 €**.
 
 ### Arquitectura del Hardware
 
@@ -122,7 +121,7 @@ En esta sección se describe los detalles del software y la visión artifical de
 
 En este apartado se detalla con un diagrama la arquitectura del software de los diversos módulos interconectados del robot, explicando cómo se comunica y colabora cada componente para garantizar el correcto funcionamiento de nuestro robot PetMate.
 
-<img src="resources/DiagramaSoftware_PetMate.png" alt="Diagrama de la arquitectura de software">
+<img src="resources/DiagramaSoftware_PetMate.png" width="500" alt="Diagrama de la arquitectura de software">
 
 ### Visión Artificial
 
