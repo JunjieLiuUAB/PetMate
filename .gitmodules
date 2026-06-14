@@ -1,4 +1,4 @@
-[submodule "PetWatch"]
-	path = PetWatch-G2_5-main
+[submodule "PetWatch-Cloud"]
+	path = PetWatch-Cloud
 	url = https://github.com/NIU1708430/PetWatch-G2_5.git
 	branch = G2_5
