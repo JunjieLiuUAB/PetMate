@@ -20,19 +20,15 @@ class HCSR04:
 
 if __name__ == "__main__":
     print("Iniciando los 3 sensores ultrasónicos...")
-    #29
+    
     sensor_cen = HCSR04(trigger_pin=5, echo_pin=6)
-    #36
-    #sensor_izq = HCSR04(trigger_pin=26, echo_pin=12)
-    #16
-    #sensor_der = HCSR04(trigger_pin=23, echo_pin=24)
-
-    #izquierod y derecho al reves estan asi que:
     sensor_der = HCSR04(trigger_pin=26, echo_pin=12)
-    
     sensor_izq = HCSR04(trigger_pin=23, echo_pin=24)
-
     
+    #sensor_izq = HCSR04(trigger_pin=26, echo_pin=12)
+    #sensor_der = HCSR04(trigger_pin=23, echo_pin=24)
+    #izquierod y derecho al reves estan asi que:
+
     try:
         while True:
             d_izq = sensor_izq.distance_cm()
