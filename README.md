@@ -109,6 +109,8 @@ El coste total estimado del hardware es de **213,33 €**.
 
 En este apartado se describe cómo se conecta todos los componentes hardware del robot para garantizar su correcto funcionamiento.
 
+<img src="resources/Diagrama_Hardware.png" alt="Diagrama de la arquitectura del hardware">
+
 ---
 
 
