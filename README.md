@@ -129,7 +129,7 @@ En este apartado se detalla con un diagrama la arquitectura del software de los 
 El pipeline de visión artificial se estructura en dos etapas en cascada:
 
 #### 1. Detección del tipo de mascota
-- Modelo de detección de objetos entrenado con técnicas de **Deep Learning y YOLOv8**.
+- Modelo de detección de objetos entrenado con técnicas de **Deep Learning y YOLOv8** (También optamos por el uso de una Google Cloud Vision API para mejores resultados).
 - Procesa el flujo de vídeo en tiempo real desde la **Pi Camera Module 2**.
 - Clasifica el animal detectado (perro, gato, etc.).
 
