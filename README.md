@@ -143,6 +143,9 @@ Una vez identificado el animal, un segundo modelo clasifica su estado postural:
 | Tumbado | El animal está estirado en el suelo |
 
 #### Infraestructura Cloud — PetWatch
+
+<p><img src="resources/Infraestructura_Cloud.png" width="500" style="border-radius: 0%;"</p>
+   
 El modelo de inferencia está desplegado en la nube a través del proyecto **[PetWatch](📂 PetWatch)**, que también gestiona:
 - Streaming de vídeo hacia la app móvil.
 - Recepción y reproducción de audios enviados por el usuario.
