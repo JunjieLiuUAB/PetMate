@@ -100,9 +100,9 @@ En esta sección se detalla el hardware y los componentes del robot.
 | <img src="resources/componentes/pila-alcalina-4-x-aa.jpg" width="250" alt="Pilas"> | Pilas Alcalinas 4×AA | 1 | 2,99 € |
 | <img src="resources/componentes/base-para-baterias-4xaa.jpg" width="250" alt="Base pilas"> | Base para pilas 4×AA | 1 | 2,00 € |
 | <img src="resources/componentes/sensor-de-distancia-por-ultrasonidos-hc-sr04.jpg" width="250" alt="HC-SR04"> | Sensor ultrasónico HC-SR04 | 3 | 1,80 € |
-| | | **TOTAL** | **212,38 €** |
+| | | **TOTAL** | **196,79 €** |
 
-El coste total estimado del hardware es de **212,38 €**.
+El coste total estimado del hardware es de **196,79 €**.
 
 ### Arquitectura del Hardware
 
