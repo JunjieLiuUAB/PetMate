@@ -238,13 +238,14 @@ PetMate/
 │
 ├── 📂 3D designs/       # Modelos CAD y archivos STL de la estructura del robot
 ├── 📂 PetWatch/         # Módulo de visión por computador y servidor en la nube
-├── 📂 circuits/         # Esquemas de conexión: L298N, sensores y Raspberry Pi
 ├── 📂 src/              # Código fuente Python ejecutable en la Raspberry Pi
-│   ├── main.py          #   Punto de entrada principal
-│   ├── navigation.py    #   Algoritmo Wall Following
-│   ├── detection.py     #   Pipeline de visión artificial
-│   ├── dispenser.py     #   Control del dispensador (servo)
-│   └── cloud.py         #   Comunicación con PetWatch
+│   ├── main.py                # Punto de entrada principal (gestión de hilos y actuadores)
+│   ├── navigation.py          # Algoritmo de navegación autónoma (Wall Following)
+│   ├── motors.py              # Control de tracción y controlador de motores (DRI0002)
+│   ├── ultrasonic.py          # Drivers de lectura para los sensores de distancia (HC-SR04)
+│   ├── dispenser_servo.py     # Control del servomotor para la liberación de comida
+│   ├── audio_input.py         # Captura de audio digital (micrófono I2S SPH0645)
+│   └── audio_output.py        # Reproducción de sonido (amplificador I2S MAX98357A)
 └── 📂 resources/        # Diagramas, arquitectura, fotos de componentes
 ```
 
