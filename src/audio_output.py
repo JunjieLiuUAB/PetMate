@@ -1,3 +1,4 @@
+#SE NECESITA ENTORNO VIRUAL VENV
 import numpy as np
 import sounddevice as sd
 
