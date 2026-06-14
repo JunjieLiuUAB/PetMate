@@ -92,6 +92,7 @@ En esta sección se detalla el hardware y los componentes del robot.
 | <img src="resources/componentes/PowerBank.jpg" width="250" alt="PowerBank"> | PowerBank 10 000 mAh | 1 | 15,95 € |
 | <img src="resources/componentes/controlador-de-motores-doble-puente-h-l298.jpg" width="250" alt="L298N"> | Controlador de motores doble puente H — L298N | 1 | 15,50 € |
 | <img src="resources/componentes/microfono-digital-mems-i2s-sph0645.jpg" width="250" alt="Micrófono"> | Micrófono electret preamplificado | 1 | 9,75 € |
+| <img src="resources/componentes/amplificador-de-audio-i2s-max98357a-3w" width="250" alt="Amplificador"> | Amplificador de audio I2s | 1 | 6,70 € |
 | <img src="resources/componentes/panel-solar-5v-1a-con-usb.jpg" width="250" alt="Panel Solar"> | Panel Solar 6 V / 1 W con cable | 1 | 9,95 € |
 | <img src="resources/componentes/pareja-de-ruedas-80x10mm-blanco.jpg" width="250" alt="Ruedas"> | Pareja de ruedas 80×10 mm | 1 | 7,95 € |
 | <img src="resources/componentes/altavoz-con-caja-3w.jpg" width="250" alt="Altavoz"> | Altavoz con caja 3 W | 1 | 5,90 € |
@@ -100,9 +101,9 @@ En esta sección se detalla el hardware y los componentes del robot.
 | <img src="resources/componentes/pila-alcalina-4-x-aa.jpg" width="250" alt="Pilas"> | Pilas Alcalinas 4×AA | 1 | 2,99 € |
 | <img src="resources/componentes/base-para-baterias-4xaa.jpg" width="250" alt="Base pilas"> | Base para pilas 4×AA | 1 | 2,00 € |
 | <img src="resources/componentes/sensor-de-distancia-por-ultrasonidos-hc-sr04.jpg" width="250" alt="HC-SR04"> | Sensor ultrasónico HC-SR04 | 3 | 1,80 € |
-| | | **TOTAL** | **196,79 €** |
+| | | **TOTAL** | **203,49 €** |
 
-El coste total estimado del hardware es de **196,79 €**.
+El coste total estimado del hardware es de **203,49 €**.
 
 ### Arquitectura del Hardware
 
