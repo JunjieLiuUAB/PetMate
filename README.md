@@ -122,7 +122,7 @@ En esta sección se describe los detalles del software y la visión artifical de
 
 En este apartado se detalla con un diagrama la arquitectura del software de los diversos módulos interconectados del robot, explicando cómo se comunica y colabora cada componente para garantizar el correcto funcionamiento de nuestro robot PetMate.
 
-<img src="resources/Diagrama_Software_2.0.png" alt="Diagrama de la arquitectura de software">
+<img src="resources/Diagrama_Software_2.0.png" width="400" alt="Diagrama de la arquitectura de software">
 
 ### Visión Artificial
 
