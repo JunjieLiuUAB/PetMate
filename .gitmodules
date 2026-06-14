@@ -1,0 +1,3 @@
+[submodule "PetWatch"]
+	path = PetWatch
+	url = https://github.com/NIU1708430/PetWatch-G2_5.git
