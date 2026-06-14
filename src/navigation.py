@@ -13,19 +13,16 @@ class HCSR04:
     def distance_cm(self):
         return self._sensor.distance * 100
 
-# CONFIGURACIÓN HARDWARE
 # controlador DRI0002
 M1_DIR = 17  
 E1_PWM = 13  
 M2_DIR = 22  
 E2_PWM = 27  
 
-# Creamos los motores de forma independiente
 motor_izquierdo = PhaseEnableMotor(phase=M1_DIR, enable=E1_PWM)
 motor_derecho = PhaseEnableMotor(phase=M2_DIR, enable=E2_PWM)
 
-# --- FUNCIONES DE MOVIMIENTO PARA EL DRI0002 ---
-# Sustituyen los métodos nativos de 'robot' para controlar velocidades individuales
+# Funciones movimiento
 
 def avanzar(velocidad=1.0):
     motor_izquierdo.forward(velocidad)
@@ -40,7 +37,6 @@ def detener():
     motor_derecho.stop()
 
 def fijar_velocidades(vel_izq, vel_der):
-    #Réplica de 'robot.value = (vel_izq, vel_der)' para ajustar curvas
     if vel_izq >= 0:
         motor_izquierdo.forward(vel_izq)
     else:
@@ -58,8 +54,8 @@ sensor_cen = HCSR04(trigger_pin=5, echo_pin=6)
 sensor_der = HCSR04(trigger_pin=26, echo_pin=12) 
 sensor_izq = HCSR04(trigger_pin=23, echo_pin=24)
 
-# --- PARÁMETROS DEL ALGORITMO ---
-VEL_BASE = 0.9          # Velocidad general (de 0.0 a 1.0) antes 0.6
+# parametros
+VEL_BASE = 0.9          # Velocidad general 
 DIST_FRENTE_MIN = 35.0   # cm. Si hay algo más cerca al frente, frena y gira
 DIST_PARED_MIN = 12.0    # cm. Distancia mínima a la pared derecha para no rozar
 DIST_PARED_MAX = 40.0    # cm. Si la pared está más lejos, gírate para buscarla
@@ -114,179 +110,3 @@ except KeyboardInterrupt:
     detener()
     print("\nPrograma detenido. Motores apagados.")
 
-
-
-
-
-
-
-
-
-
-"""
-#CODIGO DRIVER ANTERIOR-------------------------------------------------------
-#Ultima version controlador antiguo---------------------------------------------------
-import os
-import time
-
-# Forzamos lgpio antes de importar gpiozero
-os.environ["GPIOZERO_PIN_FACTORY"] = "lgpio"
-
-from gpiozero import Robot, DistanceSensor
-
-# ULTRASONIDOS
-class HCSR04:
-    def __init__(self, trigger_pin, echo_pin):
-        self._sensor = DistanceSensor(echo=echo_pin, trigger=trigger_pin, max_distance=4.0)
-
-    def distance_cm(self):
-        return self._sensor.distance * 100
-
-# Config hardware
-# Motores
-#robot = Robot(left=(13, 22), right=(27, 17))
-robot = Robot(left=(17, 13), right=(22, 27))
-
-# Sensores (Centro y Derecha)
-print("Inicializando sensores...")
-sensor_cen = HCSR04(trigger_pin=5, echo_pin=6)
-#sensor_der = HCSR04(trigger_pin=23, echo_pin=24)
-sensor_der = HCSR04(trigger_pin=26, echo_pin=12) 
-sensor_izq = HCSR04(trigger_pin=23, echo_pin=24)
-
-# --- PARÁMETROS DEL ALGORITMO ---
-VEL_BASE = 0.85              # Velocidad general (de 0.0 a 1.0)
-DIST_FRENTE_MIN = 25.0     # cm. Si hay algo más cerca al frente, frena y gira
-DIST_PARED_MIN = 20.0       # cm. Distancia mínima a la pared derecha para no rozar
-DIST_PARED_MAX = 35.0      # cm. Si la pared está más lejos, gírate para buscarla
-
-print("\n¡Comenzando Wall-Following (Pared a la derecha)!")
-print("Presiona Ctrl+C para detener el robot.\n")
-
-# Damos un segundo para soltar el robot antes de que empiece a moverse
-time.sleep(1)
-
-try:
-    while True:
-        # Leer distancias
-        d_cen = sensor_cen.distance_cm()
-        d_der = sensor_der.distance_cm()
-        d_izq = sensor_izq.distance_cm()
-        
-        # 1. Obstaculo frente
-        if d_cen < DIST_FRENTE_MIN:
-            print(f"Obstáculo al frente ({d_cen:.1f} cm) -> Girando a la IZQUIERDA")
-            # robot.left() hace que el robot gire sobre su propio eje hacia la izquierda
-            robot.left(VEL_BASE)
-
-        #2. Obstacula izquierda
-        elif d_izq < DIST_PARED_MIN:
-            print(f"Peligro a la izquierda ({d_izq:.1f} cm) -> Ajustando DERECHA")
-            robot.value = (VEL_BASE, 0.5)  
-
-        #3. Seguimiento pared derecha
-        else:
-            if d_der < DIST_PARED_MIN:
-                # Muy cerca: curva suave a la izquierda para separarnos
-                print(f"Muy cerca de la pared ({d_der:.1f} cm) -> Ajustando IZQUIERDA")
-                # Rueda derecha más rápida que la izquierda
-                robot.value = (0.5, VEL_BASE) 
-
-            elif d_der > DIST_PARED_MAX:
-                # Muy lejos (o hueco/esquina): curva hacia la derecha para buscar pared
-                print(f"Buscando pared ({d_der:.1f} cm) -> Ajustando DERECHA")
-                # Rueda izquierda más rápida que la derecha
-                robot.value = (VEL_BASE, 0.5) 
-
-            else:
-                # Distancia perfecta (entre MIN y MAX): ir recto
-                print(f"Trayectoria correcta (Izquierda: {d_izq:.1f} cm, Centro: {d_cen:.1f} cm, Der: {d_der:.1f} cm) -> RECTO")
-                robot.forward(VEL_BASE)
-                
-        # Pequeña pausa para dar tiempo a los motores y sensores a actualizarse
-        time.sleep(0.2)
-
-except KeyboardInterrupt:
-    # Parada de emergencia y apagado limpio
-    robot.stop()
-    print("\nPrograma detenido. Motores apagados.")
-
-"""
-"""
-import os
-import time
-os.environ["GPIOZERO_PIN_FACTORY"] = "lgpio"
-from gpiozero import Robot, DistanceSensor
-
-# ULTRASONIDOS
-class HCSR04:
-    def __init__(self, trigger_pin, echo_pin):
-        self._sensor = DistanceSensor(echo=echo_pin, trigger=trigger_pin, max_distance=4.0)
-
-    def distance_cm(self):
-        return self._sensor.distance * 100
-
-# Config hardware
-# Motores
-#robot = Robot(left=(13, 22), right=(27, 17))
-robot = Robot(left=(17, 13), right=(22, 27))
-
-# Sensores (Centro y Derecha)
-print("Inicializando sensores...")
-sensor_cen = HCSR04(trigger_pin=5, echo_pin=6)
-#sensor_der = HCSR04(trigger_pin=23, echo_pin=24)
-sensor_der = HCSR04(trigger_pin=26, echo_pin=12)
-sensor_izq = HCSR04(trigger_pin=23, echo_pin=24)
-
-# --- PARÁMETROS DEL ALGORITMO ---
-VEL_BASE = 0.8              # Velocidad general (de 0.0 a 1.0)
-DIST_FRENTE_MIN = 25.0     # cm. Si hay algo más cerca al frente, frena y gira
-DIST_PARED_MIN = 20.0       # cm. Distancia mínima a la pared derecha para no rozar
-DIST_PARED_MAX = 25.0      # cm. Si la pared está más lejos, gírate para buscarla
-
-print("\n¡Comenzando Wall-Following (Pared a la derecha)!")
-print("Presiona Ctrl+C para detener el robot.\n")
-
-# Damos un segundo para soltar el robot antes de que empiece a moverse
-time.sleep(1)
-
-try:
-    while True:
-        # Leer distancias
-        d_cen = sensor_cen.distance_cm()
-        d_der = sensor_der.distance_cm()
-        d_izq = sensor_izq.distance_cm()
-
-        # 1. EVASIÓN DE OBSTÁCULOS FRONTALES
-        if d_cen < DIST_FRENTE_MIN:
-            print(f"Obstáculo al frente ({d_cen:.1f} cm) -> Girando a la IZQUIERDA")
-            # robot.left() hace que el robot gire sobre su propio eje hacia la izquierda
-            robot.left(VEL_BASE)
-
-        # 2. SEGUIMIENTO DE LA PARED DERECHA
-        else:
-            if d_der < DIST_PARED_MIN:
-                # Muy cerca: curva suave a la izquierda para separarnos
-                print(f"Muy cerca de la pared ({d_der:.1f} cm) -> Ajustando IZQUIERDA")
-                # Rueda derecha más rápida que la izquierda
-                robot.value = (0.5, VEL_BASE)
-
-            elif d_der > DIST_PARED_MAX:
-                # Muy lejos (o hueco/esquina): curva hacia la derecha para buscar pared
-                print(f"Buscando pared ({d_der:.1f} cm) -> Ajustando DERECHA")
-                # Rueda izquierda más rápida que la derecha
-                robot.value = (VEL_BASE, 0.5)
-            else:
-                # Distancia perfecta (entre MIN y MAX): ir recto
-                print(f"Trayectoria correcta (Centro: {d_cen:.1f} cm, Der: {d_der:.1f} cm) -> RECTO")
-                robot.forward(VEL_BASE)
-
-        # Pequeña pausa para dar tiempo a los motores y sensores a actualizarse
-        time.sleep(0.1)
-
-except KeyboardInterrupt:
-    # Parada de emergencia y apagado limpio
-    robot.stop()
-    print("\nPrograma detenido. Motores apagados.")
-
-"""
