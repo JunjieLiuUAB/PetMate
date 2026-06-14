@@ -23,7 +23,6 @@ motor_izquierdo = PhaseEnableMotor(phase=M1_DIR, enable=E1_PWM)
 motor_derecho = PhaseEnableMotor(phase=M2_DIR, enable=E2_PWM)
 
 # Funciones movimiento
-
 def avanzar(velocidad=1.0):
     motor_izquierdo.forward(velocidad)
     motor_derecho.forward(velocidad)
@@ -60,6 +59,53 @@ DIST_FRENTE_MIN = 35.0   # cm. Si hay algo más cerca al frente, frena y gira
 DIST_PARED_MIN = 12.0    # cm. Distancia mínima a la pared derecha para no rozar
 DIST_PARED_MAX = 40.0    # cm. Si la pared está más lejos, gírate para buscarla
 
+
+# --- FUNCIÓN PRINCIPAL PARA EL HILO ---
+def iniciar_navegacion_autonoma(running_flag):
+    print("[HARDWARE] Navegación autónoma iniciada.")
+    
+    try:
+        while running_flag.is_set():
+            # Leer distancias
+            d_cen = sensor_cen.distance_cm()
+            d_der = sensor_der.distance_cm()
+            d_izq = sensor_izq.distance_cm()
+            
+            # 1. Obstáculo al frente
+            if d_cen < DIST_FRENTE_MIN:
+                print(f"Obstáculo al frente ({d_cen:.1f} cm) -> Girando a la IZQUIERDA")
+                girar_izquierda(VEL_BASE/2.3)
+
+            # 2. Obstáculo a la izquierda
+            elif d_izq < DIST_PARED_MIN:
+                print(f"Peligro a la izquierda ({d_izq:.1f} cm) -> Ajustando DERECHA")
+                fijar_velocidades(VEL_BASE, 0.5) 
+
+            # 3. Seguimiento pared derecha
+            else:
+                if d_der < DIST_PARED_MIN:
+                    print(f"Muy cerca de la pared ({d_der:.1f} cm) -> Ajustando IZQUIERDA")
+                    fijar_velocidades(0.5, VEL_BASE) 
+
+                elif d_der > DIST_PARED_MAX:
+                    print(f"Buscando pared ({d_der:.1f} cm) -> Ajustando DERECHA")
+                    fijar_velocidades(VEL_BASE, 0.5) 
+
+                else:
+                    print(f"Trayectoria correcta (Izq: {d_izq:.1f} cm, Cen: {d_cen:.1f} cm, Der: {d_der:.1f} cm) -> RECTO")
+                    avanzar(VEL_BASE)
+                    
+            # Pausa para dar tiempo a los motores y no saturar la CPU
+            time.sleep(0.1)
+            
+    except Exception as e:
+        print(f"\n[ERROR EN NAVEGACIÓN] {e}")
+    finally:
+        detener()
+        print("[HARDWARE] Navegación detenida de forma segura. Motores apagados.")
+
+"""
+#TEST
 print("\n¡Comenzando Wall-Following con DRI0002 (Pared a la derecha)!")
 print("Presiona Ctrl+C para detener el robot.\n")
 
@@ -110,3 +156,4 @@ except KeyboardInterrupt:
     detener()
     print("\nPrograma detenido. Motores apagados.")
 
+"""
