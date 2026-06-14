@@ -10,6 +10,17 @@ MAX_PULSE = 2.5 / 1000
 
 servo = Servo(4, min_pulse_width=MIN_PULSE, max_pulse_width=MAX_PULSE)
 
+def dar_comida():
+    print("[HARDWARE] Activando dispensador de comida...")
+    servo.max() 
+    time.sleep(1.5)
+    servo.value = -0.70 
+    time.sleep(1.5)
+    servo.value = None 
+
+
+"""
+#Test
 print("Iniciando control del servo MG90S...")
 
 try:
@@ -32,3 +43,4 @@ try:
 except KeyboardInterrupt:
     servo.value = None
     print("\nPrograma detenido.")
+    """
