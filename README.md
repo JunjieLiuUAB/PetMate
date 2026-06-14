@@ -109,7 +109,7 @@ El coste total estimado del hardware es de **213,33 €**.
 
 En este apartado se describe cómo se conecta todos los componentes hardware del robot para garantizar su correcto funcionamiento.
 
-<img src="resources/Diagrama_Hardware.png" alt="Diagrama de la arquitectura del hardware">
+<img src="resources/Diagrama_Hardware.png" width="500" alt="Diagrama de la arquitectura del hardware">
 
 ---
 
@@ -122,7 +122,7 @@ En esta sección se describe los detalles del software y la visión artifical de
 
 En este apartado se detalla con un diagrama la arquitectura del software de los diversos módulos interconectados del robot, explicando cómo se comunica y colabora cada componente para garantizar el correcto funcionamiento de nuestro robot PetMate.
 
-<img src="resources/Diagrama_Software_2.0.png" width="300" alt="Diagrama de la arquitectura de software">
+<img src="resources/Diagrama_Software_2.0.png" alt="Diagrama de la arquitectura de software">
 
 ### Visión Artificial
 
